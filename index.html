@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Despesas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2 class="sidebar-title">RESUMO</h2>
+            
+            <div class="total-section">
+                <span class="label">Soma total</span>
+                <h1 class="total-value">R$ 0,00</h1>
+            </div>
+
+            <div class="categories-section">
+                <span class="label">Totais por categoria</span>
+                <ul class="category-list">
+                    <li><span>Alimentos</span> <span>R$ 0,00</span></li>
+                    <li><span>Transporte</span> <span>R$ 0,00</span></li>
+                    <li><span>Lazer</span> <span>R$ 0,00</span></li>
+                    <li><span>Saúde</span> <span>R$ 0,00</span></li>
+                    <li><span>Cartão de Crédito</span> <span>R$ 0,00</span></li>
+                    <li><span>Outros</span> <span>R$ 0,00</span></li>
+                </ul>
+            </div>
+        </aside>
+
+
+        <main class="main-content">
+            
+            <section class="panel">
+                <h2 class="panel-title">Nova Despesa</h2>
+                <form action="#" class="expense-form">
+                    <div class="input-group">
+                        <label for="titulo">Título</label>
+                        <input type="text" id="titulo" placeholder="Ex: Mercado do mês">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="valor">Valor</label>
+                        <input type="text" id="valor" placeholder="Ex: 150,00">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria">
+                            <option value="" disabled selected>Selecione uma categoria</option>
+                            <option value="alimentos">Alimentos</option>
+                            <option value="transporte">Transporte</option>
+                            <option value="lazer">Lazer</option>
+                            <option value="saude">Saúde</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Adicionar despesa</button>
+                </form>
+            </section>
+
+            
+            <section class="panel">
+                <h2 class="panel-title">Despesas</h2>
+                <div class="empty-state">
+                    <p>Nenhuma despesa cadastrada ainda.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
